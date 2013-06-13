@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 16, 2013 at 01:54 PM
+-- Generation Time: June 13, 2013 at 8:35 PM
 -- Server version: 5.1.66
 -- PHP Version: 5.4.10
 
@@ -67,6 +67,19 @@ CREATE TABLE IF NOT EXISTS `users` (
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `config`
+--
+
+CREATE TABLE IF NOT EXISTS `config` (
+  `name` VARCHAR(64) PRIMARY KEY NOT NULL,
+  `value` TEXT
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
